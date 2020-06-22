@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin default-transition($property) {
+  transition: $property 0.08s ease-in-out;
+}
+
+@mixin forTablet {
+  @media (max-width: 720px) {
+    @content;
+  }
+}

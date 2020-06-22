@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 32%;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.value {
+  margin-top: 15px;
+  font-size: 50px;
+}
+
+@include forTablet {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
